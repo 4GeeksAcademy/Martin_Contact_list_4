@@ -19,10 +19,10 @@ const AddContact = () => {
             const existingContact = store.contacts.find(contact => contact.id === parseInt(id));
             if (existingContact) {
                 setContact({
-                    name: "",
-                    phone: "",
-                    email: "",
-                    address: ""
+                    name: existingContact.name,
+                    phone: existingContact.phone,
+                    email: existingContact.email,
+                    address: existingContact.address
                 });
             }
         }
